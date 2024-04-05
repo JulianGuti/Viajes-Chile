@@ -1,5 +1,5 @@
 .logo-viajes{
-    max-width: 2.5%;
+    max-width: 2.5rem;
 }
 #quienes-somos{
     background-color: black;
@@ -19,4 +19,7 @@
 }
 .footer{
     background-color: black;
+    color: white;
+    
 }
+

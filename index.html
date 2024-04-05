@@ -31,9 +31,9 @@
   </head>
   <!-- navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top my-navbar">
       <img class="logo-viajes" src="assets/img/viajes.svg" alt="logo viajes" />
-      <a class="navbar-brand" href="#">Viajes Chile</a>
+      <a class="navbar-brand text-light" href="#">Viajes Chile</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -45,19 +45,19 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-sm-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Asi Somos</a>
+            <a class="nav-link text-light" href="#quienes-somos">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Destacados</a>
+            <a class="nav-link text-light" href="#destacados">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link text-light" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -113,12 +113,12 @@
       </button>
     </div>
     <!-- seccion QUienes somos -->
-    <section id="quienes-somos">
-      <h2 class="text-center">¿QUIENES SOMOS?</h2>
+    <section id="quienes-somos" class="quienes">
+      <h2 class="text-center p-2">¿QUIENES SOMOS?</h2>
       <div class="container text-center">
         <div class="row col">
           <div class="col">
-            <i class="fa-solid fa-plane my-3 bg-info w-100"></i>
+            <i class="fa-solid fa-plane my-3 bg-info w-100 p-2"></i>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
               eligendi qui? Hic soluta porro cumque, distinctio magni quod
@@ -140,10 +140,10 @@
               voluptatibus modi. Consequatur voluptatem dolorum animi totam vero
               voluptatibus eius amet.
             </p>
-            <i class="fa-solid fa-mountain my-3 bg-info w-100"></i>
+            <i class="fa-solid fa-mountain my-3 bg-info w-100 p-2"></i>
           </div>
           <div class="col">
-            <i class="fa-solid fa-route my-3 bg-info w-100"></i>
+            <i class="fa-solid fa-route my-3 bg-info w-100 p-2"></i>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
               atque placeat labore vero inventore doloribus repudiandae.
@@ -159,14 +159,14 @@
       </div>
     </section>
     <!-- seccion Destacados -->
-    <section id="destacados" class="text-center">
+    <section id="destacados" class="text-center bg-black">
       <h2>DESTACADOS</h2>
       <div class="row justify-content-center">
         <div
           class="card col-md-3 col-sm-12 m-3 bg-info p-0"
           style="width: 18rem"
         >
-          <img src="assets/img/card1.jpg" class="card-img-top" alt="carta1" />
+          <img src="assets/img/card1.jpg" class="card-img-top h-100" alt="carta1" />
           <div class="card-body">
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -178,7 +178,7 @@
           class="card col-md-3 col-sm-12 m-3 bg-info p-0"
           style="width: 18rem"
         >
-          <img src="assets/img/card2.jpg" class="card-img-top" alt="carta2" />
+          <img src="assets/img/card2.jpg" class="card-img-top h-100" alt="carta2" />
           <div class="card-body">
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -190,7 +190,7 @@
           class="card col-md-3 col-sm-12 m-3 bg-info p-0"
           style="width: 18rem"
         >
-          <img src="assets/img/card3.jpg" class="card-img-top" alt="carta3" />
+          <img src="assets/img/card3.jpg" class="card-img-top h-100" alt="carta3" />
           <div class="card-body">
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -202,7 +202,7 @@
           class="card col-md-3 col-sm-12 m-3 bg-info p-0"
           style="width: 18rem"
         >
-          <img src="assets/img/card4.jpg" class="card-img-top" alt="carta4" />
+          <img src="assets/img/card4.jpg" class="card-img-top h-100" alt="carta4" />
           <div class="card-body">
             <p class="card-text">
               Some quick example text to build on the card title and make up the
@@ -212,8 +212,10 @@
         </div>
       </div>
     </section>
-    <section id="contacto" class="">
-      <h2 class="text-center">CONTACTO</h2>
+
+    <section id="contacto" class="bg-black">
+      <div class="container bg-black">
+        <h2 class="text-center">CONTACTO</h2>
       <div class="mb-3 m-5">
         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
         <input
@@ -242,23 +244,26 @@
           rows="3"
         ></textarea>
       </div>
-      <div class="col-12 m-5">
+      <div class="col-12 m-5 p-2">
         <button class="btn btn-primary" type="submit">Enviar</button>
       </div>
+    </div>
     </section>
     <!-- seccion footer -->
-    <footer id="footer" class="container-fluid bg-info max-">
-          <h2 class="m-5 d-flex justify-content-start">VIAJES CHILE</h2>
+    <footer id="footer" class="p-0 bg-info">
+      <div class="container bg-info">
+        <h2 class="p-2 d-flex justify-content-start">VIAJES CHILE</h2>
           <div class="d-flex justify-content-end">
             <a
               href="https://github.com/JulianGuti/Viajes-Chile"
               target="_blank"
-            ></a
-            ><i class="fa-brands fa-github h2 p-2"></i>
-            <a href="https://www.linkedin.com/feed/" target="_blank"></a><i class="fa-brands fa-linkedin h2 p-2"></i>
-            <a href="https://twitter.com/?lang=es" target="_blank"></a><i class="fa-brands fa-twitter h2 p-2"></i>
-            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"></a><i class="fa-brands fa-facebook h2 p-2"></i>
+            ><i class="fa-brands fa-github h2 p-2 text-light" ></i></a
+            >
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin h2 p-2 text-light"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter h2 p-2 text-light"></i></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook h2 p-2 text-light"></i></a>
           </div>
+      </div>
     </footer>
     <!-- bootstrap -->
     <script
